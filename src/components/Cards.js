@@ -34,17 +34,17 @@ const Cards = () => {
   const [previousCardState, setPreviousCardState] = useState (-1);
   const previousIndex = useRef (-1);
 
-  const matchCheck = currCard => {
-    if (cards[currCard].id === cards[previousCardState].id) {
-      cards[currCard].status = 'active matched';
+  const matchCheck = currentCard => {
+    if (cards[currentCard].id === cards[previousCardState].id) {
       cards[previousCardState].status = 'active matched';
+      cards[currentCard].status = 'active matched';
       setPreviousCardState (-1);
     } else {
-      cards[currCard].status = 'active';
+      cards[currentCard].status = 'active';
       setCards ([...cards]);
       setTimeout (() => {
         setPreviousCardState (-1);
-        cards[currCard].status = 'unmatch';
+        cards[currentCard].status = 'unmatch';
         cards[previousCardState].status = 'unmatch';
         setCards ([...cards]);
       }, 1000);
@@ -52,13 +52,9 @@ const Cards = () => {
   };
 
   const clickhandler = index => {
-    console.log ('clicked card', index);
-    // alert (index);
-
     if (index !== previousIndex.current) {
-      console.log ('GAME ON');
       if (cards[index].status === 'active matched') {
-        alert ('already matched!');
+        alert ('already matched');
       } else {
         if (previousCardState === -1) {
           previousIndex.current = index;
@@ -71,7 +67,7 @@ const Cards = () => {
         }
       }
     } else {
-      alert ('CARD CURRENTLY SELECTED!');
+      alert ('card currently seleted');
     }
   };
   return (
