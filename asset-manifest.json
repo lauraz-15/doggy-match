@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/lauraz-15/doggy-match/static/css/main.ac3e886f.css",
+    "main.js": "/lauraz-15/doggy-match/static/js/main.330b8359.js",
+    "static/js/787.bb6cda95.chunk.js": "/lauraz-15/doggy-match/static/js/787.bb6cda95.chunk.js",
+    "index.html": "/lauraz-15/doggy-match/index.html",
+    "main.ac3e886f.css.map": "/lauraz-15/doggy-match/static/css/main.ac3e886f.css.map",
+    "main.330b8359.js.map": "/lauraz-15/doggy-match/static/js/main.330b8359.js.map",
+    "787.bb6cda95.chunk.js.map": "/lauraz-15/doggy-match/static/js/787.bb6cda95.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac3e886f.css",
+    "static/js/main.330b8359.js"
+  ]
+}
